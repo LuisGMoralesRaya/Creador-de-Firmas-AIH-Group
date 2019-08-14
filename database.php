@@ -1,8 +1,8 @@
 <?php
 $server = 'localhost';
-$username = 'luisgmor_kickroo';
+$username = 'luismorales';
 $password = 'kickroot12-';
-$database = 'luisgmor_emailSignature';
+$database = 'generadorDeFirmas';
 
 try{
 	$conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);

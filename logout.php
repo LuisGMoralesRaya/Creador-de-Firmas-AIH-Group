@@ -6,4 +6,4 @@ session_unset();
 
 session_destroy();
 
-header("Location: http://luisgmorales.com.mx/demoEmailSignature/index.php");
+header("Location: http://generador-de-firmas.aihgroup.com.mx/index.php");

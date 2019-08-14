@@ -20,7 +20,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])):
 	if(count($results) > 0 && password_verify($_POST['password'], $results['password']) ){
 
 		$_SESSION['user_id'] = $results['id'];
-		header("Location: http://luisgmorales.com.mx/demoEmailSignature/index.php");
+		header("Location: http://generador-de-firmas.aihgroup.com.mx/index.php");
 
 	} else {
 		$message = 'Sorry, those credentials do not match';
@@ -46,7 +46,7 @@ endif;
         <div class="website-logo">
             <a href="index.html">
                 <div class="logo">
-                    <img class="logo-size" src="images/logo-light.svg" alt="">
+                    <img class="logo-size" src="images/logo-light.png" alt="">
                 </div>
             </a>
         </div>
@@ -60,8 +60,8 @@ endif;
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                        <h3>Login to account</h3>
-                        <p>Access to the most powerfull tool in the entire design and web industry.</p>
+                        <h3>Inicie sesión en la cuenta</h3>
+                        <p>Acceso a la herramienta más poderosa en toda la industria del diseño y la web.</p>
                         <form action="login.php" method="POST">
 						<input type="text" placeholder="Correo Electronico" name="email">
 							<input class="form-control" type="password" placeholder="Contraseña" name="password">
@@ -69,13 +69,13 @@ endif;
 							<input class="ibtn" class="form-control" type="submit">
 							</div>
                         </form>
-                        <div class="other-links">
+                        <!-- <div class="other-links">
                             <div class="text">Or login with</div>
                             <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a><a href="#"><i class="fab fa-google"></i>Google</a><a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a>
                         </div>
                         <div class="page-links">
                             <a href="register17.html">Register new account</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
